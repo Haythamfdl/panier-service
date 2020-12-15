@@ -9,10 +9,12 @@ import javax.persistence.*;
 
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
-public class Jeu {
+public class Vinyl {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nom;
     private double prix;
+    private String catégorie;
+    private String img;
 }

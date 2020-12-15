@@ -14,9 +14,10 @@ public class PanierItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private Long jeuID;
+    private Long vinylID;
     @Transient
-    private Jeu jeu;
+    private Vinyl vinyl;
+    private  Integer quantiter;
     @ManyToOne
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Panier panier;
